@@ -1,0 +1,15 @@
+import pandas_datareader as dr
+import pandas as df
+from matplotlib import pyplot as plt
+"Stock analyzer"
+while 1==1:
+    print("please enter a ticker to recieve stock data")
+    choice = input('')
+    answer =dr.get_data_tiingo(choice, api_key = "")
+    print('This is the most recent stock data')
+    yaxis=answer.open
+    xaxis= range(len(yaxis))
+    plt.xlabel('number of data points')
+    plt.ylabel(str(choice)+ ' performance')
+    plt.plot(xaxis, yaxis)
+    plt.show()
