@@ -14,7 +14,7 @@ import numpy as np
 while 1==1:
     print("please enter a ticker to recieve stock data")
     choice = input('')
-    answer =dr.get_data_tiingo(choice, api_key = "d84f4052876453bf9a781a051a379afbf8b1076a")
+    answer =dr.get_data_tiingo(choice, api_key = "##################")
     answer.reset_index(inplace=True)
     print(answer.head(-1))
     yaxis=answer.adjClose
@@ -39,7 +39,7 @@ while 1==1:
     plt.close('all')
     start1= datetime(2020,1,1)
     end1 = datetime.today()
-    answer =dr.get_data_tiingo(choice, start1, end1, api_key = "d84f4052876453bf9a781a051a379afbf8b1076a")
+    answer =dr.get_data_tiingo(choice, start1, end1, api_key = "###############")
     answer.reset_index(inplace=True)
     print('This is the most recent stock data')
     yaxis=answer.open
