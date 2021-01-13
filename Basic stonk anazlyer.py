@@ -27,7 +27,7 @@ while 1==1:
     plt.close('all')
     start2= datetime(2019,4,1)
     end2 = datetime.today()
-    answer =dr.get_data_tiingo(choice, start2, end2, api_key = "d84f4052876453bf9a781a051a379afbf8b1076a")
+    answer =dr.get_data_tiingo(choice, start2, end2, api_key = "############################")
     answer.reset_index(inplace=True)    
     yaxis=answer.open
     xaxis= answer.date
